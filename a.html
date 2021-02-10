@@ -1,0 +1,65 @@
+<html><head>
+  <title>Peanut</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:image" content="./img/peanut-avatar.png">
+  <meta property="og:title" content="Peanut">
+  <meta property="og:description" content="Peanut for Cashew">
+  <link rel="shortcut icon" href="./img/peanut-avatar.png" type="image/png">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
+  <link href="https://fonts.googleapis.com/css?family=Titillium Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	
+
+	
+	
+  <div id="contentParent" class="responsive-columns-wrapper">
+	<div id="banner-image-holder">
+		<img src="./img/300x300-1.jpg" style="cursor: pointer">
+	</div>  
+    <div id="chat-column-holder" class="responsive-column-no-scroll">
+      <div class="chat-column">
+        <div id="scrollingChat">
+          <div class="segments load">
+            <div id="timestamp" class="from-watson">Today at 10:14 AM</div>
+          </div>
+          <div class="segments load">
+            <div class="bot-icon-div">
+              <div><img class="bot-icon" src="./img/peanut-avatar.png"></div>
+              <div><img class="bot-icon-text" src="./img/peanut-text.png"></div>
+            </div>
+            <div class="from-watson top"><div class="message-inner"><p>Hey 👋 Welcome to Cashew. We create <b>interactive voice ads</b> on Alexa and Google assistant!</p></div></div></div>
+            <div class="segments load"><div class="from-watson sub"><div class="message-inner"><p>Want to learn more?</p></div></div></div>            
+          
+        <div class="segments load"><div class="from-user top"><div class="message-inner"><p>Yeah!</p></div></div></div></div>
+        <p class="user-typing" id="user-typing-field"></p>
+        <div id="input-holder" class="inputOutline" style="">
+          <div class="text-input-div">
+            <input id="textInput" class="input responsive-column" maxlength="200" placeholder="Ask Peanut..." type="text" onkeydown="ConversationPanel.inputKeyDown(event, this)" autofocus="">
+          </div>
+          <div class="send-button-div">
+            <button id="sendIcon" class="send-icon" onclick="ConversationPanel.clickSend()" disabled="">
+              <i class="fa fa-paper-plane"></i>
+            </button>   
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div id="textInputDummy"></div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/peanut.js"></script>
+
+</body></html>
