@@ -1,7 +1,7 @@
 $(document).ready(function() {
-	$("#chat-column-holder").hide();
+	$("#contentParent").hide();
 	$("#banner-image-holder").click(function() {
 		$("#banner-image-holder").hide();
-		$("#chat-column-holder").show();
+		$("#contentParent").show();
 	});  
 });
