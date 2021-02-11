@@ -17,10 +17,14 @@
 
 	
 	<div id="banner-image-holder">
-		<img src="./img/300x300-1.jpg" style="cursor: pointer">
-	</div>  	
+		<img src="./img/ad-banner.jpg" id="ad-banner">
+	</div>  
   <div id="contentParent" class="responsive-columns-wrapper">
-    <div id="chat-column-holder" class="responsive-column-no-scroll">
+    <div id="banner-image-holder-small">
+      <img src="./img/ad-banner-small.jpg" id="ad-banner-small">
+    </div>  	
+    
+      <div id="chat-column-holder" class="responsive-column-no-scroll">
       <div class="chat-column">
 
         <div id="scrollingChat">
@@ -28,7 +32,86 @@
             <div id="timestamp" class="from-watson">Today at 4:47 PM</div>
           </div>
 
-        <div class="segments load"><div class="bot-icon-div"><div><img class="bot-icon" src="./img/peanut-avatar.png"></div></div><div class="from-watson latest top"><div class="message-inner"><p>We created an interactive voice ad for Tripadvisor.</p></div></div></div><div class="segments load"><div class="from-watson latest sub"><div class="message-inner"><p>When users engaged, the ad provided a voice tour of Abu Dhabi.</p></div></div></div><div class="segments load"><div class="from-watson latest sub"><div class="message-inner"><p>Tripadvisor claims it as the 'World’s first virtual voice tour of a destination on Alexa'. Here is a demo:</p></div></div></div><div class="segments load" id="cashew-video"><div class="from-watson latest sub"><div class="message-inner2"><p><iframe src="https://www.youtube.com/embed/6xTmRrKkkSs?autoplay=1&amp;controls=1&amp;mute=1" frameborder="0" allowfullscreen=""></iframe></p></div></div></div><div class="segments load"><div class="from-watson latest sub"><div class="message-inner"><p>We are seeing engagement rates of 4 minutes with this campaign.</p></div></div></div><div class="segments load"><div class="from-watson latest sub"><div class="message-inner"><p>Ready to speak to one of our voice experts?</p></div></div></div><div class="segments load" id="quick-replies"><div class="from-watson latest sub"><div class="message-inner2"><p><div class="options-button" onclick="ConversationPanel.sendMessage('Okay');">Okay</div><div class="options-button" onclick="ConversationPanel.sendMessage('Not quite yet, show me more');">Not quite yet, show me more</div></p></div></div></div></div>        
+
+
+
+          <div class="segments load">
+            <div class="bot-icon-div">
+               <div><img class="bot-icon" src="./img/peanut-avatar.png"></div>
+            </div>
+            <div class="from-watson latest top">
+               <div class="message-inner">
+                  <p>We created an interactive voice ad for Tripadvisor.</p>
+               </div>
+            </div>
+         </div>
+         <div class="segments load">
+            <div class="from-watson latest sub">
+               <div class="message-inner">
+                  <p>When users engaged, the ad provided a voice tour of Abu Dhabi.</p>
+               </div>
+            </div>
+         </div>
+         <div class="segments load">
+            <div class="from-watson latest sub">
+               <div class="message-inner">
+                  <p>Tripadvisor claims it as the 'World’s first virtual voice tour of a destination on Alexa'. Here is a demo:</p>
+               </div>
+            </div>
+         </div>
+         <div class="segments load" id="cashew-video">
+            <div class="from-watson latest sub">
+               <div class="message-inner2">
+                  <p><iframe src="https://www.youtube.com/embed/6xTmRrKkkSs?autoplay=1&amp;controls=1&amp;mute=1" frameborder="0" allowfullscreen=""></iframe></p>
+               </div>
+            </div>
+         </div>
+         <div class="segments load">
+            <div class="from-watson latest sub">
+               <div class="message-inner">
+                  <p>We are seeing engagement rates of 4 minutes with this campaign.</p>
+               </div>
+            </div>
+         </div>
+         <div class="segments load">
+            <div class="from-watson latest sub">
+               <div class="message-inner">
+                  <p>Ready to speak to one of our voice experts?</p>
+               </div>
+            </div>
+         </div>
+                
+         <div class="segments load">
+            <div class="bot-icon-div">
+               <div><img class="bot-icon" src="./img/peanut-avatar.png"></div>
+            </div>
+            <div class="from-watson latest sub">
+               <div class="message-inner">
+                  <p>Cool!</p>
+               </div>
+            </div>
+         </div>
+         <div class="segments load">
+            <div class="from-watson latest sub">
+               <div class="message-inner">
+                  <p>Pick a logo 👇 for another case study.</p>
+               </div>
+            </div>
+         </div>
+         <div class="segments load" id="quick-replies">
+            <div class="from-watson latest sub">
+               <div class="message-inner2">
+                  <p>
+                  <div class="options-button-image" onclick="ConversationPanel.sendMessage('SONY');"><img src="./img/SONY.png" loading="lazy" alt="SONY" height="32px"></div>
+                  <div class="options-button-image" onclick="ConversationPanel.sendMessage('Tripadvisor');"><img src="./img/TRIP.png" loading="lazy" alt="Tripadvisor" height="32px"></div>
+                  <div class="options-button-image" onclick="ConversationPanel.sendMessage('CBS');"><img src="./img/CBS.png" loading="lazy" alt="CBS" height="32px"></div>
+                  <div class="options-button" onclick="ConversationPanel.sendMessage('Tell me how voice ads work');">Tell me how voice ads work</div>
+                  </p>
+               </div>
+            </div>
+         </div>
+
+
 
 
         <p class="user-typing" id="user-typing-field"></p>
